@@ -1,4 +1,4 @@
-#Sealbot - A bot by AGingerWhoCodes on Github
+#Sealboi - A bot by AGingerWhoCodes on Github
 
 import discord
 from discord.ext import commands
@@ -51,4 +51,9 @@ async def kill(ctx, user: discord.Member):
 @bot.command(pass_context = True)
 async def yosh(ctx):
     await bot.say(":heart: Yosh is love, yosh is life")
-bot.run("NDA2NDY0MTQ4OTIzMjE5OTY5.DUzVAQ.zCYqSEnbYuoRKXC1gsOZhrStHuo")
+
+@bot.command(pass_context = True)
+async def suicide(ctx, user: discord.Member):
+    await bot.say("{}, you shouldn't commit suicide. People care about you. I care about you. We all care. You can vent if you need to, or call a suicide prevention hotline. Please, don't kill yourself".format(user.name))
+
+bot.run("TOKEN")
