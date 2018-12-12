@@ -52,8 +52,4 @@ async def kill(ctx, user: discord.Member):
 async def yosh(ctx):
     await bot.say(":heart: Yosh is love, yosh is life")
 
-@bot.command(pass_context = True)
-async def suicide(ctx, user: discord.Member):
-    await bot.say("{}, you shouldn't commit suicide. People care about you. I care about you. We all care. You can vent if you need to, or call a suicide prevention hotline. Please, don't kill yourself".format(user.name))
-
 bot.run("TOKEN")
